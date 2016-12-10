@@ -1,10 +1,41 @@
 fileFormatVersion: 2
 guid: 32fa63abf1974804a93260515ca24f22
-timeCreated: 1481408577
+timeCreated: 1481410351
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Zombie_Face
+    21300002: LudumDare_0
+    21300004: LudumDare_1
+    21300006: LudumDare_2
+    21300008: LudumDare_3
+    21300010: LudumDare_4
+    21300012: LudumDare_5
+    21300014: LudumDare_6
+    21300016: LudumDare_7
+    21300018: LudumDare_8
+    21300020: LudumDare_9
+    21300022: LudumDare_10
+    21300024: LudumDare_11
+    21300026: LudumDare_12
+    21300028: LudumDare_13
+    21300030: LudumDare_14
+    21300032: LudumDare_15
+    21300034: LudumDare_16
+    21300036: LudumDare_17
+    21300038: LudumDare_18
+    21300040: LudumDare_19
+    21300042: LudumDare_20
+    21300044: LudumDare_21
+    21300046: LudumDare_22
+    21300048: LudumDare_23
+    21300050: LudumDare_24
+    21300052: LudumDare_25
+    21300054: LudumDare_26
+    21300056: LudumDare_27
+    21300058: LudumDare_28
+    21300060: LudumDare_29
+    21300062: LudumDare_30
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -67,17 +98,415 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Zombie_Face
+      name: LudumDare_0
       rect:
         serializedVersion: 2
         x: 26
         y: 794
         width: 91
         height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 794
+        width: 48
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_2
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 785
+        width: 115
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_3
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 788
+        width: 70
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_4
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 788
+        width: 207
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_5
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 792
+        width: 132
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_6
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 793
+        width: 131
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_7
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 644
+        width: 90
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_8
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 677
+        width: 101
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_9
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 677
+        width: 101
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_10
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 677
+        width: 101
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_11
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 677
+        width: 101
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_12
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 677
+        width: 101
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_13
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 677
+        width: 101
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_14
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 676
+        width: 101
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_15
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 622
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_16
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 622
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_17
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 622
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_18
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 622
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_19
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 622
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_20
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 622
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_21
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 621
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_22
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 563
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_23
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 563
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_24
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 563
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_25
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 563
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_26
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 563
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_27
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 563
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_28
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 245
+        width: 317
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_29
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 245
+        width: 315
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LudumDare_30
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 672
+        width: 244
+        height: 113
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
