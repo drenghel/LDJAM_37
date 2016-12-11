@@ -15,7 +15,7 @@ public class Becher : MonoBehaviour
     }
 
 
-    public void InitBecher(ChemicalType chemicalType)
+    public void Editbecher(ChemicalType chemicalType)
     {
         _containingChemicalType = chemicalType;
         _spriteRenderer.sprite = FindObjectOfType<BecherList>().GetSpriteWithType(chemicalType);
@@ -27,7 +27,7 @@ public class Becher : MonoBehaviour
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
 
-        InitBecher(ChemicalType.Red);
+        Editbecher(ChemicalType.Empty);
     }
 }
 
