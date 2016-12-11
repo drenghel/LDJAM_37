@@ -47,9 +47,12 @@ public class BecherList : MonoBehaviour
 
     public Sprite GetSpriteWithType(ChemicalType type)
     {
-        if (type == ChemicalType.Empty)
+        switch (type)
         {
-            return null;
+            case ChemicalType.Empty:
+                return null;
+                case ChemicalType.Mixed:
+                throw new UnityException("Mixed Chemical has not been implemented !");
         }
 
         Sprite res;

@@ -41,5 +41,6 @@ public enum ChemicalType
     Yellow,
     Orange,
     Green,
-    Base
+    Base,
+    Mixed
 }
