@@ -1,18 +1,21 @@
 fileFormatVersion: 2
-guid: 2a0f3e4a902ef21488250b7da9452b24
-timeCreated: 1481477629
+guid: e5c8c8ba6fe2f8c44aa540d856d80b02
+timeCreated: 1481483863
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Beicher
-    21300002: Liquid
-    21300004: Door
-    21300006: Table_Top
-    21300008: table_Face
-    21300010: Ground
-    21300012: Wall
-    21300014: window
-    21300016: Table_profil
+    21300000: zombie_0
+    21300002: zombie_1
+    21300004: zombie_2
+    21300006: zombie_3
+    21300008: zombie_4
+    21300010: zombie_5
+    21300012: zombie_6
+    21300014: zombie_7
+    21300016: zombie_8
+    21300018: zombie_9
+    21300020: zombie_10
+    21300022: zombie_11
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -79,119 +82,158 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Beicher
+      name: zombie_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 937
-        width: 50
-        height: 44
+        x: 257
+        y: 700
+        width: 144
+        height: 180
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Liquid
+      name: zombie_1
       rect:
         serializedVersion: 2
-        x: 62
-        y: 939
-        width: 34
-        height: 28
+        x: 422
+        y: 695
+        width: 157
+        height: 185
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Door
+      name: zombie_2
       rect:
         serializedVersion: 2
-        x: 566
-        y: 718
-        width: 254
-        height: 253
+        x: 604
+        y: 700
+        width: 144
+        height: 180
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Table_Top
+      name: zombie_3
       rect:
         serializedVersion: 2
-        x: 10
-        y: 825
-        width: 287
-        height: 92
+        x: 257
+        y: 511
+        width: 129
+        height: 179
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: table_Face
+      name: zombie_4
       rect:
         serializedVersion: 2
-        x: 317
-        y: 720
-        width: 91
-        height: 98
+        x: 436
+        y: 506
+        width: 129
+        height: 181
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Ground
+      name: zombie_5
       rect:
         serializedVersion: 2
-        x: 20
-        y: 450
-        width: 244
-        height: 244
+        x: 599
+        y: 508
+        width: 129
+        height: 179
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Wall
+      name: zombie_6
       rect:
         serializedVersion: 2
-        x: 299
-        y: 446
-        width: 253
-        height: 252
+        x: 256
+        y: 322
+        width: 130
+        height: 179
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: window
+      name: zombie_7
       rect:
         serializedVersion: 2
-        x: 569
-        y: 446
-        width: 253
-        height: 253
+        x: 436
+        y: 314
+        width: 129
+        height: 182
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Table_profil
+      name: zombie_8
       rect:
         serializedVersion: 2
-        x: 10
-        y: 721
-        width: 287
-        height: 98
+        x: 579
+        y: 316
+        width: 129
+        height: 179
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zombie_9
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 133
+        width: 133
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zombie_10
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 120
+        width: 136
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zombie_11
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 124
+        width: 133
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
