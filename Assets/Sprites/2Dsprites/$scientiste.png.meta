@@ -1,21 +1,21 @@
 fileFormatVersion: 2
 guid: 7c95175bcd9cee4428da639ddc9ac840
-timeCreated: 1481466953
+timeCreated: 1481495875
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: $scientiste_0
-    21300002: $scientiste_1
-    21300004: $scientiste_2
-    21300006: $scientiste_3
-    21300008: $scientiste_4
-    21300010: $scientiste_5
-    21300012: $scientiste_6
-    21300014: $scientiste_7
-    21300016: $scientiste_8
-    21300018: $scientiste_9
-    21300020: $scientiste_10
-    21300022: $scientiste_11
+    21300000: Face1
+    21300002: Face2
+    21300004: Face3
+    21300006: Left1
+    21300008: Left3
+    21300010: Right1
+    21300012: Right3
+    21300014: Back1
+    21300016: Back3
+    21300018: Left2
+    21300020: Right2
+    21300022: Back2
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -82,7 +82,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: $scientiste_0
+      name: Face1
       rect:
         serializedVersion: 2
         x: 10
@@ -90,12 +90,12 @@ TextureImporter:
         width: 75
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: $scientiste_1
+      name: Face2
       rect:
         serializedVersion: 2
         x: 103
@@ -108,7 +108,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: $scientiste_2
+      name: Face3
       rect:
         serializedVersion: 2
         x: 202
@@ -116,12 +116,12 @@ TextureImporter:
         width: 75
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: $scientiste_3
+      name: Left1
       rect:
         serializedVersion: 2
         x: 15
@@ -129,12 +129,12 @@ TextureImporter:
         width: 66
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: $scientiste_4
+      name: Left3
       rect:
         serializedVersion: 2
         x: 207
@@ -142,12 +142,12 @@ TextureImporter:
         width: 66
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: $scientiste_5
+      name: Right1
       rect:
         serializedVersion: 2
         x: 15
@@ -155,12 +155,12 @@ TextureImporter:
         width: 66
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: $scientiste_6
+      name: Right3
       rect:
         serializedVersion: 2
         x: 207
@@ -168,12 +168,12 @@ TextureImporter:
         width: 66
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: $scientiste_7
+      name: Back1
       rect:
         serializedVersion: 2
         x: 13
@@ -181,12 +181,12 @@ TextureImporter:
         width: 69
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: $scientiste_8
+      name: Back3
       rect:
         serializedVersion: 2
         x: 205
@@ -194,12 +194,12 @@ TextureImporter:
         width: 69
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: $scientiste_9
+      name: Left2
       rect:
         serializedVersion: 2
         x: 103
@@ -212,7 +212,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: $scientiste_10
+      name: Right2
       rect:
         serializedVersion: 2
         x: 103
@@ -225,7 +225,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: $scientiste_11
+      name: Back2
       rect:
         serializedVersion: 2
         x: 104

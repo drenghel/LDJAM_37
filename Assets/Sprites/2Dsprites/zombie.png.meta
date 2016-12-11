@@ -1,21 +1,21 @@
 fileFormatVersion: 2
 guid: e5c8c8ba6fe2f8c44aa540d856d80b02
-timeCreated: 1481483863
+timeCreated: 1481495962
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: zombie_0
-    21300002: zombie_1
-    21300004: zombie_2
-    21300006: zombie_3
-    21300008: zombie_4
-    21300010: zombie_5
-    21300012: zombie_6
-    21300014: zombie_7
-    21300016: zombie_8
-    21300018: zombie_9
-    21300020: zombie_10
-    21300022: zombie_11
+    21300000: Face0
+    21300002: Face1
+    21300004: Face2
+    21300006: Left1
+    21300008: Left2
+    21300010: Left3
+    21300012: Right1
+    21300014: Right2
+    21300016: Right3
+    21300018: Back1
+    21300020: Back2
+    21300022: Back3
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -82,7 +82,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: zombie_0
+      name: Face0
       rect:
         serializedVersion: 2
         x: 257
@@ -90,12 +90,12 @@ TextureImporter:
         width: 144
         height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: zombie_1
+      name: Face1
       rect:
         serializedVersion: 2
         x: 422
@@ -103,12 +103,12 @@ TextureImporter:
         width: 157
         height: 185
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: zombie_2
+      name: Face2
       rect:
         serializedVersion: 2
         x: 604
@@ -116,12 +116,12 @@ TextureImporter:
         width: 144
         height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: zombie_3
+      name: Left1
       rect:
         serializedVersion: 2
         x: 257
@@ -129,12 +129,12 @@ TextureImporter:
         width: 129
         height: 179
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: zombie_4
+      name: Left2
       rect:
         serializedVersion: 2
         x: 436
@@ -142,12 +142,12 @@ TextureImporter:
         width: 129
         height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: zombie_5
+      name: Left3
       rect:
         serializedVersion: 2
         x: 599
@@ -155,12 +155,12 @@ TextureImporter:
         width: 129
         height: 179
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: zombie_6
+      name: Right1
       rect:
         serializedVersion: 2
         x: 256
@@ -168,12 +168,12 @@ TextureImporter:
         width: 130
         height: 179
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: zombie_7
+      name: Right2
       rect:
         serializedVersion: 2
         x: 436
@@ -181,12 +181,12 @@ TextureImporter:
         width: 129
         height: 182
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: zombie_8
+      name: Right3
       rect:
         serializedVersion: 2
         x: 579
@@ -194,12 +194,12 @@ TextureImporter:
         width: 129
         height: 179
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: zombie_9
+      name: Back1
       rect:
         serializedVersion: 2
         x: 253
@@ -207,12 +207,12 @@ TextureImporter:
         width: 133
         height: 179
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: zombie_10
+      name: Back2
       rect:
         serializedVersion: 2
         x: 432
@@ -220,12 +220,12 @@ TextureImporter:
         width: 136
         height: 184
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: zombie_11
+      name: Back3
       rect:
         serializedVersion: 2
         x: 579
@@ -233,7 +233,7 @@ TextureImporter:
         width: 133
         height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
