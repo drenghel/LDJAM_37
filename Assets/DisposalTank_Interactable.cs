@@ -6,7 +6,7 @@ public class DisposalTank_Interactable : Interactable
     {
         base.Interact();
 
-        ScientistController player = SceneGetter.GetPlayerController();
+        ScientistController player = SceneManager.GetPlayerController();
 
 
         if (player.BecherHeld.ContainingChemicalType == ChemicalType.Empty)

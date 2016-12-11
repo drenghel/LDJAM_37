@@ -17,7 +17,7 @@ public class ChemicalTank : MonoBehaviour
     void Start()
     {
         _overSprite.enabled = false;
-        _scientistController = SceneGetter.GetPlayerController();
+        _scientistController = SceneManager.GetPlayerController();
 
     }
 
