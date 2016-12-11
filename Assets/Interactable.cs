@@ -10,16 +10,18 @@ public abstract class Interactable : MonoBehaviour
     }
     void Update()
     {
-        CheckInteraction();
 
-    }
-
-    protected virtual void CheckInteraction()
-    {
         if (Input.GetButtonUp("Interact") && _playerIsCloseEnough)
         {
-            Debug.Log("Yey some has interacted with me !");
+            Interact();
         }
+    }
+
+    protected virtual void Interact()
+    {
+
+        Debug.Log("Yey some has interacted with me !(" + GetType().Name + ")");
+
     }
 
     private void OnTriggerEnter(Collider other)

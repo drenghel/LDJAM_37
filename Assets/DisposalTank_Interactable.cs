@@ -1,9 +1,23 @@
-﻿public class DisposalTank_Interactable : Interactable
+﻿using UnityEngine;
+
+public class DisposalTank_Interactable : Interactable
 {
-    protected override void CheckInteraction()
+    protected override void Interact()
     {
-        base.CheckInteraction();
+        base.Interact();
+
+        ScientistController player = SceneGetter.GetPlayerController();
 
 
+        if (player.BecherHeld.ContainingChemicalType == ChemicalType.Empty)
+        {
+            //TODO Real error msg
+            Debug.LogError("Your becher is empty you can't empty it !");
+        }
+        else
+        {
+            //TODO Feedback
+            player.BecherHeld.Editbecher(ChemicalType.Empty);
+        }
     }
 }

@@ -17,7 +17,7 @@ public class ChemicalTank : MonoBehaviour
     void Start()
     {
         _overSprite.enabled = false;
-        _scientistController = GetPlayerController();
+        _scientistController = SceneGetter.GetPlayerController();
 
     }
 
@@ -57,11 +57,5 @@ public class ChemicalTank : MonoBehaviour
         }
     }
 
-    private static ScientistController GetPlayerController()
-    {
-        ScientistController[] scientistControllers = FindObjectsOfType<ScientistController>();
-        if (scientistControllers.Length != 1)
-            throw new UnityException("There can be ONLY ONE PLAYER !");
-        return scientistControllers[0];
-    }
+
 }
