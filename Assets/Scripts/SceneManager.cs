@@ -58,4 +58,6 @@ public class SceneManager : MonoBehaviour
             throw new UnityException("There can only be one SceneManger");
         return sMs[0];
     }
+
+
 }

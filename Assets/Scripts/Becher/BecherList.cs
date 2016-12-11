@@ -13,12 +13,11 @@ public class BecherList : MonoBehaviour
     public Sprite BaseBecherSprite;
 
 
-
-
     private Dictionary<ChemicalType, Sprite> _spritesDictionary;
     private Dictionary<Sprite, ChemicalType> _typesDictionary;
+    private Dictionary<ChemicalType, Color> _colorsDictionary;
 
-    void Start()
+    void Awake()
     {
         _spritesDictionary = new Dictionary<ChemicalType, Sprite>
         {
@@ -42,6 +41,14 @@ public class BecherList : MonoBehaviour
             {OrangeBecherSprite, ChemicalType.Orange},
             {PurpleBecherSprite, ChemicalType.Purple}
         };
+        _colorsDictionary = new Dictionary<ChemicalType, Color>
+        {
+            {ChemicalType.Base, Color.white},
+            {ChemicalType.Red, Color.red},
+            {ChemicalType.Blue, Color.blue},
+            {ChemicalType.Green, Color.green},
+            {ChemicalType.Empty, Color.clear}
+        };
     }
 
 
@@ -51,7 +58,7 @@ public class BecherList : MonoBehaviour
         {
             case ChemicalType.Empty:
                 return null;
-                case ChemicalType.Mixed:
+            case ChemicalType.Mixed:
                 throw new UnityException("Mixed Chemical has not been implemented !");
         }
 
@@ -65,12 +72,31 @@ public class BecherList : MonoBehaviour
 
     public ChemicalType GetTypeOfSprite(Sprite sprite)
     {
-
-
         ChemicalType res;
         bool success = _typesDictionary.TryGetValue(sprite, out res);
         if (success)
             return res;
         throw new UnityException("There is no " + sprite.name + "type in the becher list");
+    }
+
+    public Color GetColorWithType(ChemicalType type)
+    {
+        Color res;
+        bool success = _colorsDictionary.TryGetValue(type, out res);
+        if (success)
+            return res;
+        throw new UnityException("There is no " + type + "color in the becher list");
+    }
+
+
+    public static Color CombineColors(params Color[] aColors)
+    {
+        Color result = new Color(0, 0, 0, 0);
+        foreach (Color c in aColors)
+        {
+            result += c;
+        }
+        result /= aColors.Length;
+        return result;
     }
 }

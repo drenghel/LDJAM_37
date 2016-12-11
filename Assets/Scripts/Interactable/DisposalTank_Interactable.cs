@@ -17,7 +17,7 @@ public class DisposalTank_Interactable : Interactable
         else
         {
             //TODO Feedback
-            player.BecherHeld.Editbecher(ChemicalType.Empty);
+            player.BecherHeld.EditBecher(ChemicalType.Empty);
         }
     }
 }

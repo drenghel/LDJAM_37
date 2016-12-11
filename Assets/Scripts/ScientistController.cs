@@ -3,7 +3,7 @@
 public class ScientistController : MonoBehaviour
 {
 
-    public Becher BecherHeld;
+    public PlayerBecher BecherHeld;
 
     private CharacterController _characterControler;
 

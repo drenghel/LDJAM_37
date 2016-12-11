@@ -48,7 +48,7 @@ public class ChemicalTank : MonoBehaviour
         Debug.Log("Hey  someonetried to take some juice from  " + transform.parent.gameObject.name);
         if (_scientistController.BecherHeld.ContainingChemicalType == ChemicalType.Empty)
         {
-            _scientistController.BecherHeld.Editbecher(_containingChemicalType);
+            _scientistController.BecherHeld.EditBecher(_containingChemicalType);
         }
         else
         {

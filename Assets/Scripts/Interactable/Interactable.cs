@@ -38,10 +38,14 @@ public abstract class Interactable : MonoBehaviour
         if (other.gameObject.tag == Tags.Player.ToString())
         {
             _playerIsCloseEnough = false;
+            GoBackToFullView();
 
         }
     }
 
 
-
+    protected void GoBackToFullView()
+    {
+        SceneManager.ChangeCamera(SceneManager.GetSceneManager().FullViewCamera);
+    }
 }
