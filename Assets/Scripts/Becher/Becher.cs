@@ -54,10 +54,7 @@ public enum ChemicalType
 {
     Empty,
     Red,
-    Purple,
     Blue,
-    Yellow,
-    Orange,
     Green,
     Base,
     Mixed

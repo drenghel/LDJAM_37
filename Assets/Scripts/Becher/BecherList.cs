@@ -24,10 +24,7 @@ public class BecherList : MonoBehaviour
             {ChemicalType.Base, BaseBecherSprite},
             {ChemicalType.Red, RedBecherSprite},
             {ChemicalType.Blue, BlueBecherSprite},
-            {ChemicalType.Green, GreenBecherSprite},
-            {ChemicalType.Yellow, YellowBecherSprite},
-            {ChemicalType.Orange, OrangeBecherSprite},
-            {ChemicalType.Purple, PurpleBecherSprite},
+            {ChemicalType.Green, GreenBecherSprite}
         };
 
 
@@ -36,10 +33,7 @@ public class BecherList : MonoBehaviour
             {BaseBecherSprite, ChemicalType.Base},
             {RedBecherSprite, ChemicalType.Red},
             {BlueBecherSprite, ChemicalType.Blue},
-            {GreenBecherSprite, ChemicalType.Green},
-            {YellowBecherSprite, ChemicalType.Yellow},
-            {OrangeBecherSprite, ChemicalType.Orange},
-            {PurpleBecherSprite, ChemicalType.Purple}
+            {GreenBecherSprite, ChemicalType.Green}
         };
         _colorsDictionary = new Dictionary<ChemicalType, Color>
         {
