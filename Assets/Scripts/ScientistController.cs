@@ -2,6 +2,9 @@
 
 public class ScientistController : MonoBehaviour
 {
+
+    public Becher BecherHeld;
+
     private CharacterController _characterControler;
 
 
@@ -24,8 +27,7 @@ public class ScientistController : MonoBehaviour
 
     void Update()
     {
-        CharacterController controller = GetComponent<CharacterController>();
-        if (controller.isGrounded)
+        if (_characterControler.isGrounded)
         {
             _moveDirection = new Vector3(-Input.GetAxis("Horizontal"), 0, -Input.GetAxis("Vertical"));
             _moveDirection = transform.TransformDirection(_moveDirection);
@@ -34,6 +36,6 @@ public class ScientistController : MonoBehaviour
             //    _moveDirection.y = jumpSpeed;
         }
         _moveDirection.y -= _gravity * Time.deltaTime;
-        controller.Move(_moveDirection * Time.deltaTime);
+        _characterControler.Move(_moveDirection * Time.deltaTime);
     }
 }
