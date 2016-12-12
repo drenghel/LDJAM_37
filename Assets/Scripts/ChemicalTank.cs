@@ -2,13 +2,10 @@
 
 public class ChemicalTank : MonoBehaviour
 {
-
-    [SerializeField]
-    private SpriteRenderer _overSprite;
+    [SerializeField] private SpriteRenderer _overSprite;
 
 
-    [SerializeField]
-    private ChemicalType _containingChemicalType;
+    [SerializeField] private ChemicalType _containingChemicalType;
 
 
     private ScientistController _scientistController;
@@ -18,13 +15,11 @@ public class ChemicalTank : MonoBehaviour
     {
         _overSprite.enabled = false;
         _scientistController = SceneManager.GetPlayerController();
-
     }
 
     // Update is called once per frame
     void Update()
     {
-
     }
 
     private void OnMouseOver()
@@ -40,15 +35,19 @@ public class ChemicalTank : MonoBehaviour
     private void OnMouseExit()
     {
         _overSprite.enabled = false;
-
     }
 
     private void OnMouseUpAsButton()
     {
         Debug.Log("Hey  someonetried to take some juice from  " + transform.parent.gameObject.name);
-        if (_scientistController.BecherHeld.ContainingChemicalType == ChemicalType.Empty)
+        if (_scientistController.BecherHeld.ContainingChemicalType == ChemicalType.None)
         {
             _scientistController.BecherHeld.EditBecher(_containingChemicalType);
+        }
+        else if (_scientistController.BecherHeld.ContainingChemicalType == ChemicalType.Empty)
+        {
+            Debug.LogError("How did he got an empty becher ?");
+
         }
         else
         {
@@ -56,6 +55,4 @@ public class ChemicalTank : MonoBehaviour
             Debug.LogError("Your becher is already full, empty it before !");
         }
     }
-
-
 }

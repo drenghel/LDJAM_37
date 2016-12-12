@@ -1,19 +1,19 @@
 fileFormatVersion: 2
 guid: 0fc21803ec6c1be499f2761cd7e21d5e
-timeCreated: 1481535961
+timeCreated: 1481536844
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: spritessheet_melange_chauffe_0
-    21300002: spritessheet_melange_chauffe_1
-    21300004: spritessheet_melange_chauffe_2
-    21300006: spritessheet_melange_chauffe_3
+    21300000: Running_Liquid_3_L
+    21300002: Running_Liquid_6_L
+    21300004: Running_Liquid_7_L
+    21300006: Running_Liquid_8_L
     21300008: Heater_LeftPart
     21300010: Running_Liquid_1_L
-    21300012: spritessheet_melange_chauffe_8
-    21300014: spritessheet_melange_chauffe_9
-    21300016: spritessheet_melange_chauffe_10
-    21300018: spritessheet_melange_chauffe_11
+    21300012: Running_Liquid_2_L
+    21300014: Running_Liquid_4_L
+    21300016: Running_Liquid_5_L
+    21300018: Running_Liquid_9_L
     21300020: spritessheet_melange_chauffe_13
     21300022: spritessheet_melange_chauffe_14
     21300024: spritessheet_melange_chauffe_15
@@ -119,7 +119,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_0
+      name: Running_Liquid_3_L
       rect:
         serializedVersion: 2
         x: 168
@@ -132,7 +132,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_1
+      name: Running_Liquid_6_L
       rect:
         serializedVersion: 2
         x: 364
@@ -145,7 +145,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_2
+      name: Running_Liquid_7_L
       rect:
         serializedVersion: 2
         x: 434
@@ -158,7 +158,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_3
+      name: Running_Liquid_8_L
       rect:
         serializedVersion: 2
         x: 516
@@ -197,7 +197,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_8
+      name: Running_Liquid_2_L
       rect:
         serializedVersion: 2
         x: 111
@@ -210,7 +210,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_9
+      name: Running_Liquid_4_L
       rect:
         serializedVersion: 2
         x: 229
@@ -223,7 +223,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_10
+      name: Running_Liquid_5_L
       rect:
         serializedVersion: 2
         x: 304
@@ -236,7 +236,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_11
+      name: Running_Liquid_9_L
       rect:
         serializedVersion: 2
         x: 593

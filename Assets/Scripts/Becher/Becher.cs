@@ -4,11 +4,11 @@ public class Becher : MonoBehaviour
 {
     [ReadOnlyCustom] [SerializeField] protected ChemicalType _containingChemicalType = ChemicalType.Empty;
 
-    [ReadOnlyCustom] [SerializeField] private Color _currentLiquidColor;
+    [ReadOnlyCustom] [SerializeField] protected Color _currentLiquidColor;
 
-    [SerializeField] private SpriteRenderer _spriteRendererBecher;
+    [SerializeField] protected SpriteRenderer _spriteRendererBecher;
 
-    [SerializeField] private SpriteRenderer _spriteRendererLiquid;
+    [SerializeField] protected SpriteRenderer _spriteRendererLiquid;
 
 
     public ChemicalType ContainingChemicalType
@@ -31,22 +31,17 @@ public class Becher : MonoBehaviour
     {
         _containingChemicalType = chemicalType;
 
-        //TODO To remove later
-        _spriteRendererBecher.sprite = FindObjectOfType<BecherList>().GetSpriteWithType(chemicalType);
-
+        _spriteRendererBecher.sprite = chemicalType == ChemicalType.Empty ? null : BecherList.EmptyBecherSprite;
         CurrentLiquidColor = FindObjectOfType<BecherList>().GetColorWithType(chemicalType);
         if (chemicalType == ChemicalType.Mixed)
             throw new UnityException("You can't assign a mixed color with that method");
     }
 
-    private void BecherMixer(Becher stationBecher)
+    protected void BecherMixer(Becher stationBecher)
     {
         CurrentLiquidColor = BecherList.CombineColors(CurrentLiquidColor, stationBecher.CurrentLiquidColor);
         _containingChemicalType = ChemicalType.Mixed;
     }
-
-
-   
 }
 
 
@@ -57,5 +52,6 @@ public enum ChemicalType
     Blue,
     Green,
     Base,
-    Mixed
+    Mixed,
+    None
 }
