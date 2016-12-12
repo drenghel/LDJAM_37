@@ -4,6 +4,8 @@ public abstract class Interactable : MonoBehaviour
 {
     private bool _playerIsCloseEnough;
 
+    [SerializeField] private ExitButton _exitButton;
+
     void Start()
     {
         _playerIsCloseEnough = false;
@@ -20,7 +22,7 @@ public abstract class Interactable : MonoBehaviour
     protected virtual void Interact()
     {
 
-        Debug.Log("Yey some has interacted with me !(" + GetType().Name + ")");
+        Debug.Log("Yey some has interacted with me ! (" + GetType().Name + ")");
 
     }
 
@@ -38,14 +40,14 @@ public abstract class Interactable : MonoBehaviour
         if (other.gameObject.tag == Tags.Player.ToString())
         {
             _playerIsCloseEnough = false;
-            GoBackToFullView();
 
+            _exitButton.GoBackToFullView();
         }
     }
 
 
-    protected void GoBackToFullView()
-    {
-        SceneManager.ChangeCamera(SceneManager.GetSceneManager().FullViewCamera);
-    }
+    //protected void GoBackToFullView()
+    //{
+    //    SceneManager.ChangeCamera(SceneManager.GetSceneManager().FullViewCamera);
+    //}
 }

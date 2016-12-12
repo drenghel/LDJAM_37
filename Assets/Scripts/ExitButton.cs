@@ -2,11 +2,14 @@
 
 public class ExitButton : MonoBehaviour {
 
-    private void OnMouseUpAsButton()
+    protected virtual void OnMouseUpAsButton()
     {
-        SceneManager.ChangeCamera(SceneManager.GetSceneManager().FullViewCamera);
+        GoBackToFullView();
 
     }
 
-
+    public virtual void GoBackToFullView()
+    {
+        SceneManager.ChangeCamera(SceneManager.GetSceneManager().FullViewCamera);
+    }
 }
