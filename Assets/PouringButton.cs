@@ -3,7 +3,7 @@
 public class PouringButton : MonoBehaviour
 {
     [SerializeField] SpriteRenderer _overSpriteRenderer;
-    [SerializeField] private Mixer _mixer;
+    [SerializeField] private MixerAnimationsHandling _mixerAnimationsHandling;
     private void Start()
     {
         _overSpriteRenderer.enabled = false;
@@ -14,9 +14,9 @@ public class PouringButton : MonoBehaviour
     {
 
 
-        Debug.Log("Click on pourring !" + _mixer.gameObject.transform.parent.name);
+        Debug.Log("Click on pourring !" + _mixerAnimationsHandling.gameObject.transform.parent.name);
 
-        _mixer.TriggerAnimation();
+        _mixerAnimationsHandling.TriggerAnimation();
     }
 
     private void OnMouseOver()
