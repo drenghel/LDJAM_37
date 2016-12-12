@@ -24,6 +24,6 @@ public class Enemy : MonoBehaviour
 
 	void Move()
 	{
-		transform.position += Vector3.left * speed * Time.deltaTime;
+		transform.Translate (Vector3.left * speed * Time.deltaTime);
 	}
 }
