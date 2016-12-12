@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 2a0f3e4a902ef21488250b7da9452b24
-timeCreated: 1481579567
+timeCreated: 1481579682
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -16,7 +16,7 @@ TextureImporter:
     21300018: test tube rack
     21300020: EmptyBecher
     21300022: Wall_Door
-    21300024: props_3
+    21300024: Microscope_backwards
     21300026: Heater
     21300028: Table_SideShort
     21300030: Heater_Holder
@@ -338,7 +338,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: props_3
+      name: Microscope_backwards
       rect:
         serializedVersion: 2
         x: 561

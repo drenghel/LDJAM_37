@@ -13385,9 +13385,9 @@ GameObject:
   - component: {fileID: 1975734027}
   - component: {fileID: 1975734028}
   m_Layer: 0
-  m_Name: Microscope_BACKWARD
+  m_Name: Microscope_back
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -13435,7 +13435,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1018522731
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300040, guid: 2a0f3e4a902ef21488250b7da9452b24, type: 3}
+  m_Sprite: {fileID: 21300024, guid: 2a0f3e4a902ef21488250b7da9452b24, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
