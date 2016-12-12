@@ -10,7 +10,7 @@ public class RightStation_Interactable : Interactable
         base.Interact();
 
 
-        SceneManager.ChangeCamera(SceneManager.GetSceneManager().RightStationCamera);
+        MySceneManager.ChangeCamera(MySceneManager.GetSceneManager().RightStationCamera);
 
         MoveMixerMachineToCloseUpSation();
     }

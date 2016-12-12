@@ -26,12 +26,13 @@ public class MixerAnimationsHandling : MonoBehaviour
     {
        
         AnimatorStateInfo currentAnimatorStateInfo = _animator.GetCurrentAnimatorStateInfo(0);
-        if (currentAnimatorStateInfo.shortNameHash != Animator.StringToHash(MixerAnimParams.PourringLiquid.ToString()))
+        bool isNotPlayingPouringAnim = currentAnimatorStateInfo.shortNameHash != Animator.StringToHash(MixerAnimParams.PourringLiquid.ToString());
+        if (isNotPlayingPouringAnim)
         {
             _machineBecher.ChangeColorOfFlowingLiquid(color, Side);
             _lastColorThatFlowed = color;
             _animator.SetTrigger(MixerAnimParams.PourringLiquid.ToString());
-            PlayerBecher playerBecher = SceneManager.GetPlayerController().BecherHeld;
+            PlayerBecher playerBecher = MySceneManager.GetPlayerController().BecherHeld;
 
             playerBecher.EditBecher(ChemicalType.None);
 

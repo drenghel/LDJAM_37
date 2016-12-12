@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class SceneManager : MonoBehaviour
+public class MySceneManager : MonoBehaviour
 {
     public Camera FullViewCamera;
     public Camera RightStationCamera;
@@ -51,9 +51,9 @@ public class SceneManager : MonoBehaviour
     }
 
 
-    public static SceneManager GetSceneManager()
+    public static MySceneManager GetSceneManager()
     {
-        var sMs = FindObjectsOfType<SceneManager>();
+        var sMs = FindObjectsOfType<MySceneManager>();
         if (sMs.Length != 1)
             throw new UnityException("There can only be one SceneManger");
         return sMs[0];

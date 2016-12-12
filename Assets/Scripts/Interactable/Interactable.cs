@@ -41,13 +41,13 @@ public abstract class Interactable : MonoBehaviour
         {
             _playerIsCloseEnough = false;
 
-            _exitButton.GoBackToFullView();
+            if (_exitButton != null) _exitButton.GoBackToFullView();
         }
     }
 
 
     //protected void GoBackToFullView()
     //{
-    //    SceneManager.ChangeCamera(SceneManager.GetSceneManager().FullViewCamera);
+    //    MySceneManager.ChangeCamera(MySceneManager.GetSceneManager().FullViewCamera);
     //}
 }

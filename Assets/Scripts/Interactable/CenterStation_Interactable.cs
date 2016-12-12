@@ -3,6 +3,6 @@
     protected override void Interact()
     {
         base.Interact();
-        SceneManager.ChangeCamera(SceneManager.GetSceneManager().CenterStationCamera);
+        MySceneManager.ChangeCamera(MySceneManager.GetSceneManager().CenterStationCamera);
     }
 }

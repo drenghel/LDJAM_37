@@ -2,6 +2,11 @@
 
 public class PouringButton : MonoBehaviour
 {
+
+
+    //todo should be a child class 
+
+
     [SerializeField] SpriteRenderer _overSpriteRenderer;
     [SerializeField] private MixerAnimationsHandling _mixerAnimationsHandling;
 
@@ -14,7 +19,7 @@ public class PouringButton : MonoBehaviour
     private void OnMouseUpAsButton()
     {
         Debug.Log("Click on pourring !" + _mixerAnimationsHandling.gameObject.transform.parent.name);
-        PlayerBecher playerBecher = SceneManager.GetPlayerController().BecherHeld;
+        PlayerBecher playerBecher = MySceneManager.GetPlayerController().BecherHeld;
 
 
         if (playerBecher.ContainingChemicalType != ChemicalType.None)

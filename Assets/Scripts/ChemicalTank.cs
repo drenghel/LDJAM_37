@@ -14,7 +14,7 @@ public class ChemicalTank : MonoBehaviour
     void Start()
     {
         _overSprite.enabled = false;
-        _scientistController = SceneManager.GetPlayerController();
+        _scientistController = MySceneManager.GetPlayerController();
     }
 
     // Update is called once per frame

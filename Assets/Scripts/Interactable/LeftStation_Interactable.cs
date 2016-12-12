@@ -6,7 +6,7 @@ public class LeftStation_Interactable : Interactable
     {
         base.Interact();
         
-        SceneManager.ChangeCamera(SceneManager.GetSceneManager().LeftStationCamera);
+        MySceneManager.ChangeCamera(MySceneManager.GetSceneManager().LeftStationCamera);
 
 
     }

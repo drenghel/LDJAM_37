@@ -10,6 +10,6 @@ public class ExitButton : MonoBehaviour {
 
     public virtual void GoBackToFullView()
     {
-        SceneManager.ChangeCamera(SceneManager.GetSceneManager().FullViewCamera);
+        MySceneManager.ChangeCamera(MySceneManager.GetSceneManager().FullViewCamera);
     }
 }

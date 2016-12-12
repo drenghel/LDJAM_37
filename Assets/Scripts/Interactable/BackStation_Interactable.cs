@@ -5,7 +5,7 @@
         base.Interact();
 
 
-        SceneManager.ChangeCamera(SceneManager.GetSceneManager().BackStationCamera);
+        MySceneManager.ChangeCamera(MySceneManager.GetSceneManager().BackStationCamera);
 
     }
 }
