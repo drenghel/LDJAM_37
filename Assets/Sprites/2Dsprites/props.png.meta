@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 2a0f3e4a902ef21488250b7da9452b24
-timeCreated: 1481558210
+timeCreated: 1481563748
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -28,6 +28,8 @@ TextureImporter:
     21300042: table_top
     21300044: Table_SideLong
     21300046: props_0
+    21300048: props_1
+    21300050: props_2
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -105,7 +107,7 @@ TextureImporter:
       name: test tube rack
       rect:
         serializedVersion: 2
-        x: 24
+        x: 49
         y: 937
         width: 96
         height: 53
@@ -118,7 +120,7 @@ TextureImporter:
       name: EmptyBecher
       rect:
         serializedVersion: 2
-        x: 443
+        x: 468
         y: 932
         width: 50
         height: 44
@@ -131,10 +133,10 @@ TextureImporter:
       name: Wall_Door
       rect:
         serializedVersion: 2
-        x: 564
-        y: 719
-        width: 255
-        height: 252
+        x: 591
+        y: 718
+        width: 253
+        height: 253
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,7 +146,7 @@ TextureImporter:
       name: Heater
       rect:
         serializedVersion: 2
-        x: 444
+        x: 466
         y: 865
         width: 44
         height: 55
@@ -157,7 +159,7 @@ TextureImporter:
       name: Table_SideShort
       rect:
         serializedVersion: 2
-        x: 316
+        x: 341
         y: 720
         width: 91
         height: 98
@@ -170,7 +172,7 @@ TextureImporter:
       name: Heater_Holder
       rect:
         serializedVersion: 2
-        x: 437
+        x: 462
         y: 753
         width: 83
         height: 94
@@ -183,7 +185,7 @@ TextureImporter:
       name: Floor
       rect:
         serializedVersion: 2
-        x: 20
+        x: 44
         y: 450
         width: 244
         height: 245
@@ -196,7 +198,7 @@ TextureImporter:
       name: Wall
       rect:
         serializedVersion: 2
-        x: 298
+        x: 323
         y: 446
         width: 253
         height: 253
@@ -209,9 +211,9 @@ TextureImporter:
       name: WallWindow
       rect:
         serializedVersion: 2
-        x: 568
+        x: 594
         y: 446
-        width: 254
+        width: 253
         height: 253
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -222,7 +224,7 @@ TextureImporter:
       name: Clock
       rect:
         serializedVersion: 2
-        x: 65
+        x: 91
         y: 301
         width: 90
         height: 90
@@ -235,7 +237,7 @@ TextureImporter:
       name: MixerMachine_Whole
       rect:
         serializedVersion: 2
-        x: 234
+        x: 259
         y: 238
         width: 231
         height: 184
@@ -248,7 +250,7 @@ TextureImporter:
       name: Liquid
       rect:
         serializedVersion: 2
-        x: 145
+        x: 170
         y: 948
         width: 34
         height: 28
@@ -261,9 +263,9 @@ TextureImporter:
       name: Microscope
       rect:
         serializedVersion: 2
-        x: 312
+        x: 343
         y: 846
-        width: 107
+        width: 101
         height: 145
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -274,7 +276,7 @@ TextureImporter:
       name: table_top
       rect:
         serializedVersion: 2
-        x: 9
+        x: 34
         y: 826
         width: 287
         height: 91
@@ -287,7 +289,7 @@ TextureImporter:
       name: Table_SideLong
       rect:
         serializedVersion: 2
-        x: 9
+        x: 34
         y: 721
         width: 287
         height: 98
@@ -300,10 +302,36 @@ TextureImporter:
       name: props_0
       rect:
         serializedVersion: 2
-        x: 553
-        y: 251
-        width: 100
-        height: 145
+        x: 96
+        y: 116
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: props_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 229
+        width: 12
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: props_2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 242
+        width: 31
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
