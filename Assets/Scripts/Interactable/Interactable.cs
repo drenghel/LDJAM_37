@@ -22,7 +22,7 @@ public abstract class Interactable : MonoBehaviour
     protected virtual void Interact()
     {
 
-        Debug.Log("Yey some has interacted with me ! (" + GetType().Name + ")");
+        //Debug.Log("Yey some has interacted with me ! (" + GetType().Name + ")");
 
     }
 

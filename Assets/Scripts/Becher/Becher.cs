@@ -16,7 +16,7 @@ public class Becher : MonoBehaviour
         get { return _containingChemicalType; }
     }
 
-    protected Color CurrentLiquidColor
+    public Color CurrentLiquidColor
     {
         get { return _currentLiquidColor; }
         set
@@ -29,15 +29,17 @@ public class Becher : MonoBehaviour
 
     public void EditBecher(ChemicalType chemicalType)
     {
-        Debug.Log(gameObject.name + " has been edited to " + chemicalType);
+        //Debug.Log(gameObject.name + " has been edited to " + chemicalType);
         _containingChemicalType = chemicalType;
 
         _spriteRendererBecher.sprite = chemicalType == ChemicalType.None
             ? null
             : BecherList.GetBecherList().EmptyBecherSprite;
-        CurrentLiquidColor = FindObjectOfType<BecherList>().GetColorWithType(chemicalType);
+
         if (chemicalType == ChemicalType.Mixed)
-            throw new UnityException("You can't assign a mixed color with that method");
+            return; //gonna be handle later
+
+        CurrentLiquidColor = FindObjectOfType<BecherList>().GetColorWithType(chemicalType);
     }
 
     protected void BecherMixer(Becher stationBecher)

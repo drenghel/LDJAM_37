@@ -14,6 +14,7 @@ public class BecherList : MonoBehaviour
     //public Sprite BaseBecherSprite;
 
     private Dictionary<ChemicalType, Color> _colorsDictionary;
+    private Dictionary<Color, ChemicalType> _typeDictionary;
 
     void Awake()
     {
@@ -25,6 +26,15 @@ public class BecherList : MonoBehaviour
             {ChemicalType.Green, Color.green},
             {ChemicalType.Empty, Color.clear},
             {ChemicalType.None, Color.clear}
+        };
+        _typeDictionary = new Dictionary<Color, ChemicalType>
+        {
+            {Color.white, ChemicalType.Base},
+            {Color.red, ChemicalType.Red},
+            {Color.blue, ChemicalType.Blue},
+            {Color.green, ChemicalType.Green}
+            //{Color.clear, ChemicalType.Empty},
+            //{Color.clear, ChemicalType.None}
         };
     }
 
@@ -47,14 +57,22 @@ public class BecherList : MonoBehaviour
     //}
 
 
-    //public ChemicalType GetTypeOfSprite(Sprite sprite)
-    //{
-    //    ChemicalType res;
-    //    bool success = _typesDictionary.TryGetValue(sprite, out res);
-    //    if (success)
-    //        return res;
-    //    throw new UnityException("There is no " + sprite.name + "type in the becher list");
-    //}
+    public bool GetTypeByColor(Color color, out ChemicalType chemicalType)
+    {
+        if (color == Color.clear)
+        {
+            Debug.Log("You're trying to get a type from a clear color that can't be done");
+            chemicalType = ChemicalType.None;
+            return false; 
+        }
+        ChemicalType res;
+        bool success = _typeDictionary.TryGetValue(color, out res);
+        if (!success)
+
+            Debug.Log("There is no color :" + color + " conresponding to a  type in the becher list");
+        chemicalType = res;
+        return success;
+    }
 
     public static BecherList GetBecherList()
     {

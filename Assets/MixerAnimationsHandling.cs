@@ -6,6 +6,11 @@ public class MixerAnimationsHandling : MonoBehaviour
 
     Animator _animator;
 
+    Color _lastColorThatFlowed;
+
+
+    public Side Side;
+
 
     void Start()
 
@@ -17,12 +22,19 @@ public class MixerAnimationsHandling : MonoBehaviour
     {
     }
 
-    public void TriggerAnimation()
+    public void TriggerAnimation(Color color)
     {
+       
         AnimatorStateInfo currentAnimatorStateInfo = _animator.GetCurrentAnimatorStateInfo(0);
         if (currentAnimatorStateInfo.shortNameHash != Animator.StringToHash(MixerAnimParams.PourringLiquid.ToString()))
         {
+            _machineBecher.ChangeColorOfFlowingLiquid(color, Side);
+            _lastColorThatFlowed = color;
             _animator.SetTrigger(MixerAnimParams.PourringLiquid.ToString());
+            PlayerBecher playerBecher = SceneManager.GetPlayerController().BecherHeld;
+
+            playerBecher.EditBecher(ChemicalType.None);
+
         }
         else
         {
@@ -35,6 +47,8 @@ public class MixerAnimationsHandling : MonoBehaviour
     void LiquidFlowedToTheEnd()
     {
         Debug.Log("Liquid flowed to the end at  " + transform.parent.gameObject.name);
+        _machineBecher.SetNewBecher(_lastColorThatFlowed);
+        _lastColorThatFlowed = Color.clear;
     }
 }
 
