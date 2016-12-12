@@ -3807,6 +3807,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1ba79a324a3c6442b80f4a82f653c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hide: 0
+  hidden: {fileID: 0}
 --- !u!1 &595251645
 GameObject:
   m_ObjectHideFlags: 0
@@ -4576,6 +4578,11 @@ Transform:
   m_Father: {fileID: 1728134939}
   m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!212 &733606814 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 212039941091934626, guid: 5e23215ad58bb834d914754237a27ff2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1761196489}
 --- !u!1001 &766448627
 Prefab:
   m_ObjectHideFlags: 0
@@ -13126,6 +13133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1960416354}
   - component: {fileID: 1960416355}
+  - component: {fileID: 1960416356}
   m_Layer: 0
   m_Name: Microscope
   m_TagString: Untagged
@@ -13162,6 +13170,18 @@ BoxCollider2D:
   m_Offset: {x: -0.0000007164196, y: -0.0043036835}
   serializedVersion: 2
   m_Size: {x: 1, y: 1.542195}
+--- !u!114 &1960416356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1960416353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b15ec99555d9a194aba252d43b3c1fc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _overSpriteRenderer: {fileID: 733606814}
 --- !u!114 &1961116064 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114546141302143550, guid: 62b725ee47b4cd74bb919aab2918679f,
