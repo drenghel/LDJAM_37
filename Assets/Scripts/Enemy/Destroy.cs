@@ -6,8 +6,6 @@ public class Destroy : MonoBehaviour
 {
 	void OnCollisionEnter(Collision other)
 	{
-		Debug.Log ("HELLO");
-
 		if (other.gameObject.tag == "Zombie") {
 			DestroyObject (other.gameObject);
 		}
