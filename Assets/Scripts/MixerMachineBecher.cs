@@ -37,7 +37,7 @@ public class MixerMachineBecher : Becher
         else
         {
             ChemicalType res;
-            bool success = BecherList.GetBecherList().GetTypeByColor(newColor, out res);
+           BecherList.GetBecherList().GetTypeByColor(newColor, out res);
             EditBecher(res);
         }
     }
