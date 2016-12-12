@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 0fc21803ec6c1be499f2761cd7e21d5e
-timeCreated: 1481536844
+timeCreated: 1481558191
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -45,6 +45,7 @@ TextureImporter:
     21300076: spritessheet_melange_chauffe_43
     21300078: spritessheet_melange_chauffe_44
     21300080: Heater_RightPart
+    21300082: spritessheet_melange_chauffe_0
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -490,6 +491,19 @@ TextureImporter:
         y: 786
         width: 107
         height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritessheet_melange_chauffe_0
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 246
+        width: 258
+        height: 154
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
