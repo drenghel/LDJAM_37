@@ -15,6 +15,8 @@ public class PouringButton : MonoBehaviour
 
 
         Debug.Log("Click on pourring !" + _mixer.gameObject.transform.parent.name);
+
+        _mixer.TriggerAnimation();
     }
 
     private void OnMouseOver()
