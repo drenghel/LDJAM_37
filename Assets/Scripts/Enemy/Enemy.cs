@@ -6,14 +6,13 @@ public class Enemy : MonoBehaviour
 {
 	public float min = 0f;
 	public float max = 10f;
+	public AudioClip walk;
 
 	private float speed = 0;
-	private AudioSource walk;
 
 	void Start()
 	{
-		walk = GetComponent<AudioSource> ();
-		walk.Play ();
+		AudioSource.PlayClipAtPoint (walk, transform.position);
 	}
 
 	void Update () 
