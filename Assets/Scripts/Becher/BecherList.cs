@@ -7,7 +7,7 @@ public class BecherList : MonoBehaviour
     //public Sprite RedBecherSprite;
     //public Sprite GreenBecherSprite;
     //public Sprite BlueBecherSprite;
-    public static Sprite EmptyBecherSprite;
+    public Sprite EmptyBecherSprite;
     //public Sprite PurpleBecherSprite;
     //public Sprite OrangeBecherSprite;
     //public Sprite YellowBecherSprite;
@@ -17,8 +17,6 @@ public class BecherList : MonoBehaviour
 
     void Awake()
     {
-   
-
         _colorsDictionary = new Dictionary<ChemicalType, Color>
         {
             {ChemicalType.Base, Color.white},
@@ -57,6 +55,14 @@ public class BecherList : MonoBehaviour
     //        return res;
     //    throw new UnityException("There is no " + sprite.name + "type in the becher list");
     //}
+
+    public static BecherList GetBecherList()
+    {
+        BecherList[] list = FindObjectsOfType<BecherList>();
+        if (list.Length > 1)
+            throw new UnityException("There can no be more than one becher list !");
+        return list[0];
+    }
 
     public Color GetColorWithType(ChemicalType type)
     {
