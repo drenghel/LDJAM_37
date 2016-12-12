@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour 
 {
-	void OnTriggerEnter(Collider other)
+	void OnCollisionEnter(Collision other)
 	{
 		Debug.Log ("HELLO");
 
 		if (other.gameObject.tag == "Zombie") {
-			Destroy (other.gameObject);
+			DestroyObject (other.gameObject);
 		}
 	}
 }
