@@ -12,6 +12,7 @@ public class ScientistController : MonoBehaviour
 
     [SerializeField] private float _moveSpeed;
     [SerializeField] private float _gravity = 20.0F;
+    [SerializeField] private AudioSource _stepSound;
 
 #pragma warning restore 649
     Vector3 _moveDirection;
@@ -77,6 +78,11 @@ public class ScientistController : MonoBehaviour
         {
             _animator.SetTrigger(CharacterAnimationParams.StoppedMoving.ToString());
         }
+    }
+
+    void PlayStepSound()
+    {
+        _stepSound.Play();
     }
 
     enum CharacterAnimationParams
