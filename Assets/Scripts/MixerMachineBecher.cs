@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MixerMachineBecher : Becher
 {
@@ -21,24 +22,22 @@ public class MixerMachineBecher : Becher
 
     public void SetNewBecher(Color newColor)
     {
+        Color mixedColor;
         if (ContainingChemicalType != ChemicalType.Empty)
         {
-            Color mixedColor = BecherList.CombineColors(newColor, CurrentLiquidColor);
-            ChemicalType res;
-            bool success = BecherList.GetBecherList().GetTypeByColor(mixedColor, out res);
-            if (success)
-                EditBecher(res);
-            else
-            {
-                EditBecher(ChemicalType.Mixed);
-                CurrentLiquidColor = mixedColor;
-            }
+            mixedColor = BecherList.CombineColors(newColor, CurrentLiquidColor);
         }
         else
-        {
-            ChemicalType res;
-           BecherList.GetBecherList().GetTypeByColor(newColor, out res);
+            mixedColor = newColor;
+
+        ChemicalType res;
+        bool success = BecherList.GetBecherList().GetTypeByColor(mixedColor, out res);
+        if (success)
             EditBecher(res);
+        else
+        {
+            EditBecher(ChemicalType.Mixed);
+            CurrentLiquidColor = mixedColor;
         }
     }
 }

@@ -68,7 +68,6 @@ public class BecherList : MonoBehaviour
         ChemicalType res;
         bool success = _typeDictionary.TryGetValue(color, out res);
         if (!success)
-
             Debug.Log("There is no color :" + color + " conresponding to a  type in the becher list");
         chemicalType = res;
         return success;
