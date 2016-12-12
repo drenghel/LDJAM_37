@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 2a0f3e4a902ef21488250b7da9452b24
-timeCreated: 1481507156
+timeCreated: 1481507765
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -14,7 +14,7 @@ TextureImporter:
     21300014: window
     21300016: Table_profil
     21300018: test tube rack
-    21300020: props_1
+    21300020: EmptyBecher
     21300022: Wall_Door
     21300024: props_3
     21300026: Heater
@@ -114,7 +114,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: props_1
+      name: EmptyBecher
       rect:
         serializedVersion: 2
         x: 443
@@ -136,19 +136,6 @@ TextureImporter:
         height: 252
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: props_3
-      rect:
-        serializedVersion: 2
-        x: 441
-        y: 861
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -195,7 +182,7 @@ TextureImporter:
       name: Floor
       rect:
         serializedVersion: 2
-        x: 19
+        x: 20
         y: 450
         width: 244
         height: 245
