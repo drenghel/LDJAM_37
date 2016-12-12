@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 0fc21803ec6c1be499f2761cd7e21d5e
-timeCreated: 1481505104
+timeCreated: 1481505463
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -344,19 +344,6 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_23
-      rect:
-        serializedVersion: 2
-        x: 842
-        y: 787
-        width: 50
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
       name: spritessheet_melange_chauffe_24
       rect:
         serializedVersion: 2
@@ -494,19 +481,6 @@ TextureImporter:
         y: 617
         width: 85
         height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritessheet_melange_chauffe_35
-      rect:
-        serializedVersion: 2
-        x: 25
-        y: 626
-        width: 6
-        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
