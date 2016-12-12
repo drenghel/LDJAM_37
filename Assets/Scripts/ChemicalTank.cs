@@ -47,7 +47,6 @@ public class ChemicalTank : MonoBehaviour
         else if (_scientistController.BecherHeld.ContainingChemicalType == ChemicalType.Empty)
         {
             Debug.LogError("How did he got an empty becher ?");
-
         }
         else
         {
