@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 2a0f3e4a902ef21488250b7da9452b24
-timeCreated: 1481477629
+timeCreated: 1481507156
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -13,6 +13,20 @@ TextureImporter:
     21300012: Wall
     21300014: window
     21300016: Table_profil
+    21300018: test tube rack
+    21300020: props_1
+    21300022: Wall_Door
+    21300024: props_3
+    21300026: Heater
+    21300028: Table_SideShort
+    21300030: Heater_Holder
+    21300032: Floor
+    21300034: WallWindow
+    21300036: Clock
+    21300038: MixerMachine_Whole
+    21300040: Microscope
+    21300042: table_top
+    21300044: Table_SideLong
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -75,15 +89,36 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Beicher
+      name: test tube rack
       rect:
         serializedVersion: 2
-        x: 10
+        x: 24
         y: 937
+        width: 96
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: props_1
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 932
         width: 50
         height: 44
       alignment: 0
@@ -92,49 +127,49 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Liquid
+      name: Wall_Door
       rect:
         serializedVersion: 2
-        x: 62
-        y: 939
-        width: 34
-        height: 28
+        x: 564
+        y: 719
+        width: 255
+        height: 252
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Door
+      name: props_3
       rect:
         serializedVersion: 2
-        x: 566
-        y: 718
-        width: 254
-        height: 253
+        x: 441
+        y: 861
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Heater
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 865
+        width: 44
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Table_Top
+      name: Table_SideShort
       rect:
         serializedVersion: 2
-        x: 10
-        y: 825
-        width: 287
-        height: 92
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: table_Face
-      rect:
-        serializedVersion: 2
-        x: 317
+        x: 316
         y: 720
         width: 91
         height: 98
@@ -144,13 +179,26 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Ground
+      name: Heater_Holder
       rect:
         serializedVersion: 2
-        x: 20
+        x: 437
+        y: 753
+        width: 83
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Floor
+      rect:
+        serializedVersion: 2
+        x: 19
         y: 450
         width: 244
-        height: 244
+        height: 245
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +208,7 @@ TextureImporter:
       name: Wall
       rect:
         serializedVersion: 2
-        x: 299
-        y: 446
-        width: 253
-        height: 252
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: window
-      rect:
-        serializedVersion: 2
-        x: 569
+        x: 298
         y: 446
         width: 253
         height: 253
@@ -183,10 +218,88 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Table_profil
+      name: WallWindow
       rect:
         serializedVersion: 2
-        x: 10
+        x: 568
+        y: 446
+        width: 254
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Clock
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 301
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MixerMachine_Whole
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 238
+        width: 231
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Liquid
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 948
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Microscope
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 846
+        width: 107
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: table_top
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 826
+        width: 287
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Table_SideLong
+      rect:
+        serializedVersion: 2
+        x: 9
         y: 721
         width: 287
         height: 98
