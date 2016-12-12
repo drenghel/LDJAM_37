@@ -38,7 +38,6 @@ public class ScientistController : MonoBehaviour
             _moveDirection *= _moveSpeed;
 
             _lastMovement = new Vector2(horizontal, vertical);
-            Debug.Log(_lastMovement);
         }
         _moveDirection.y -= _gravity*Time.deltaTime;
         _characterControler.Move(_moveDirection*Time.deltaTime);
