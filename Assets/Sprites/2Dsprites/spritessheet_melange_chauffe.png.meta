@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 0fc21803ec6c1be499f2761cd7e21d5e
-timeCreated: 1481505463
+timeCreated: 1481535961
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,8 +8,8 @@ TextureImporter:
     21300002: spritessheet_melange_chauffe_1
     21300004: spritessheet_melange_chauffe_2
     21300006: spritessheet_melange_chauffe_3
-    21300008: spritessheet_melange_chauffe_5
-    21300010: spritessheet_melange_chauffe_7
+    21300008: Heater_LeftPart
+    21300010: Running_Liquid_1_L
     21300012: spritessheet_melange_chauffe_8
     21300014: spritessheet_melange_chauffe_9
     21300016: spritessheet_melange_chauffe_10
@@ -24,26 +24,27 @@ TextureImporter:
     21300034: spritessheet_melange_chauffe_20
     21300036: spritessheet_melange_chauffe_23
     21300038: spritessheet_melange_chauffe_24
-    21300040: spritessheet_melange_chauffe_25
-    21300042: spritessheet_melange_chauffe_26
-    21300044: spritessheet_melange_chauffe_27
-    21300046: spritessheet_melange_chauffe_28
-    21300048: spritessheet_melange_chauffe_29
-    21300050: spritessheet_melange_chauffe_30
-    21300052: spritessheet_melange_chauffe_31
-    21300054: spritessheet_melange_chauffe_32
+    21300040: Becher_0
+    21300042: Becher_1
+    21300044: Becher_2
+    21300046: Becher_3
+    21300048: Becher_4
+    21300050: Becher_5
+    21300052: Becher_6
+    21300054: Becher_7
     21300056: spritessheet_melange_chauffe_33
     21300058: spritessheet_melange_chauffe_34
     21300060: spritessheet_melange_chauffe_35
-    21300062: spritessheet_melange_chauffe_36
-    21300064: spritessheet_melange_chauffe_37
+    21300062: Heater_1
+    21300064: Heater_2
     21300066: spritessheet_melange_chauffe_38
-    21300068: spritessheet_melange_chauffe_39
+    21300068: Heater_3
     21300070: spritessheet_melange_chauffe_40
     21300072: spritessheet_melange_chauffe_41
     21300074: spritessheet_melange_chauffe_42
     21300076: spritessheet_melange_chauffe_43
     21300078: spritessheet_melange_chauffe_44
+    21300080: Heater_RightPart
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -106,6 +107,14 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -113,8 +122,8 @@ TextureImporter:
       name: spritessheet_melange_chauffe_0
       rect:
         serializedVersion: 2
-        x: 178
-        y: 927
+        x: 168
+        y: 933
         width: 35
         height: 26
       alignment: 0
@@ -126,8 +135,8 @@ TextureImporter:
       name: spritessheet_melange_chauffe_1
       rect:
         serializedVersion: 2
-        x: 374
-        y: 909
+        x: 364
+        y: 915
         width: 45
         height: 44
       alignment: 0
@@ -139,10 +148,10 @@ TextureImporter:
       name: spritessheet_melange_chauffe_2
       rect:
         serializedVersion: 2
-        x: 445
-        y: 919
-        width: 55
-        height: 43
+        x: 434
+        y: 918
+        width: 62
+        height: 51
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,8 +161,8 @@ TextureImporter:
       name: spritessheet_melange_chauffe_3
       rect:
         serializedVersion: 2
-        x: 526
-        y: 911
+        x: 516
+        y: 917
         width: 51
         height: 42
       alignment: 0
@@ -162,24 +171,24 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_5
+      name: Heater_LeftPart
       rect:
         serializedVersion: 2
-        x: 741
-        y: 783
-        width: 236
-        height: 187
+        x: 746
+        y: 786
+        width: 109
+        height: 184
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_7
+      name: Running_Liquid_1_L
       rect:
         serializedVersion: 2
-        x: 58
-        y: 939
+        x: 48
+        y: 945
         width: 37
         height: 13
       alignment: 0
@@ -191,8 +200,8 @@ TextureImporter:
       name: spritessheet_melange_chauffe_8
       rect:
         serializedVersion: 2
-        x: 121
-        y: 927
+        x: 111
+        y: 933
         width: 31
         height: 24
       alignment: 0
@@ -204,8 +213,8 @@ TextureImporter:
       name: spritessheet_melange_chauffe_9
       rect:
         serializedVersion: 2
-        x: 239
-        y: 927
+        x: 229
+        y: 933
         width: 49
         height: 21
       alignment: 0
@@ -217,8 +226,8 @@ TextureImporter:
       name: spritessheet_melange_chauffe_10
       rect:
         serializedVersion: 2
-        x: 314
-        y: 918
+        x: 304
+        y: 924
         width: 34
         height: 34
       alignment: 0
@@ -230,9 +239,9 @@ TextureImporter:
       name: spritessheet_melange_chauffe_11
       rect:
         serializedVersion: 2
-        x: 603
-        y: 892
-        width: 10
+        x: 593
+        y: 898
+        width: 12
         height: 70
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -240,124 +249,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_13
-      rect:
-        serializedVersion: 2
-        x: 322
-        y: 823
-        width: 34
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritessheet_melange_chauffe_14
-      rect:
-        serializedVersion: 2
-        x: 388
-        y: 817
-        width: 45
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritessheet_melange_chauffe_15
-      rect:
-        serializedVersion: 2
-        x: 603
-        y: 792
-        width: 11
-        height: 70
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritessheet_melange_chauffe_16
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 823
-        width: 37
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritessheet_melange_chauffe_17
-      rect:
-        serializedVersion: 2
-        x: 121
-        y: 811
-        width: 31
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritessheet_melange_chauffe_18
-      rect:
-        serializedVersion: 2
-        x: 178
-        y: 817
-        width: 35
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritessheet_melange_chauffe_19
-      rect:
-        serializedVersion: 2
-        x: 242
-        y: 819
-        width: 49
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritessheet_melange_chauffe_20
-      rect:
-        serializedVersion: 2
-        x: 459
-        y: 808
-        width: 55
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritessheet_melange_chauffe_24
-      rect:
-        serializedVersion: 2
-        x: 526
-        y: 804
-        width: 51
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritessheet_melange_chauffe_25
+      name: Becher_0
       rect:
         serializedVersion: 2
         x: 33
@@ -370,7 +262,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_26
+      name: Becher_1
       rect:
         serializedVersion: 2
         x: 96
@@ -383,7 +275,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_27
+      name: Becher_2
       rect:
         serializedVersion: 2
         x: 163
@@ -396,7 +288,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_28
+      name: Becher_3
       rect:
         serializedVersion: 2
         x: 226
@@ -409,7 +301,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_29
+      name: Becher_4
       rect:
         serializedVersion: 2
         x: 293
@@ -422,7 +314,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_30
+      name: Becher_5
       rect:
         serializedVersion: 2
         x: 363
@@ -435,7 +327,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_31
+      name: Becher_6
       rect:
         serializedVersion: 2
         x: 433
@@ -448,7 +340,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_32
+      name: Becher_7
       rect:
         serializedVersion: 2
         x: 500
@@ -465,9 +357,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 677
-        y: 617
-        width: 85
-        height: 112
+        y: 623
+        width: 83
+        height: 106
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,21 +370,34 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 828
-        y: 617
-        width: 85
-        height: 124
+        y: 623
+        width: 83
+        height: 118
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_36
+      name: Heater_1
       rect:
         serializedVersion: 2
         x: 28
-        y: 626
-        width: 44
+        y: 630
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Heater_2
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 630
+        width: 40
         height: 59
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -500,26 +405,13 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritessheet_melange_chauffe_37
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 626
-        width: 47
-        height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritessheet_melange_chauffe_39
+      name: Heater_3
       rect:
         serializedVersion: 2
         x: 135
-        y: 626
-        width: 44
-        height: 67
+        y: 630
+        width: 39
+        height: 63
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -569,9 +461,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 736
-        y: 431
+        y: 435
         width: 174
-        height: 148
+        height: 144
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -582,9 +474,22 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 21
-        y: 177
-        width: 236
-        height: 225
+        y: 198
+        width: 233
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Heater_RightPart
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 786
+        width: 107
+        height: 184
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
