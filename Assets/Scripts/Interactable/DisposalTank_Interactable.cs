@@ -11,13 +11,16 @@ public class DisposalTank_Interactable : Interactable
 
         if (player.BecherHeld.ContainingChemicalType == ChemicalType.None)
         {
-            //TODO Real error msg
-            Debug.LogError("You have nothing to throw away :(");
+            MySceneManager.GetDialogueBox().DialogueActivate();
+            MySceneManager.GetDialogueBox().SetDialogue("You have nothing to throw Away !");
         }
         else
         {
-            //TODO Feedback
             player.BecherHeld.EditBecher(ChemicalType.None);
+
+
+            MySceneManager.GetDialogueBox().DialogueActivate();
+            MySceneManager.GetDialogueBox().SetDialogue("You threw away your becher");
         }
     }
 }

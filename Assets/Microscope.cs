@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Text;
 using UnityEngine;
 
 public class Microscope : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer _overSpriteRenderer;
 
-    Color _solutionColor;
+    public static Color _solutionColor;
 
 
     private PlayerBecher _playerBecher;
@@ -27,7 +26,8 @@ public class Microscope : MonoBehaviour
                     "That's just some base solution my colleagues produced before their zombification, that won't suffice !";
                 break;
             case ChemicalType.Mixed:
-                res = GiveResult(_playerBecher.CurrentLiquidColor);
+                string foo;
+                res = GiveResult(_playerBecher.CurrentLiquidColor, out foo);
                 break;
             case ChemicalType.Blue:
                 res =
@@ -51,10 +51,10 @@ public class Microscope : MonoBehaviour
         MySceneManager.GetDialogueBox().DialogueActivate();
     }
 
-    private string GiveResult(Color playerBecherCurrentLiquidColor /*, out float percentScore*/)
+    public static string GiveResult(Color playerBecherCurrentLiquidColor, out string endingSentence)
     {
         Vector4 diffColor = playerBecherCurrentLiquidColor - _solutionColor;
-
+        endingSentence = "Well something went wrong with that msg... contact the dumbass dev :D";
 
         float score = Math.Abs(diffColor.x) + Math.Abs(diffColor.y) +
                       Math.Abs(diffColor.z);
@@ -63,16 +63,22 @@ public class Microscope : MonoBehaviour
 
         if (score < 0.001f && diffAlpha < 0.001f)
         {
+            endingSentence =
+                "You antidote was PERFECT !! Everybody lives ! And loves you and you still get lasagna at the restaurant !";
             return "THAT'S IT, THAT LOOKS PERFECT !";
         }
         if (score < 0.001)
         {
+            endingSentence =
+                "You antidote was really effective, but not perfect your favorite co worker died in the process :(. The pet cat too ... But from hunger...";
             return
                 "God, it's really effective, but I wonder if it could be safer for humans ? Looks like it only needs one last operation...";
         }
 
         if (score > 0.01f)
         {
+            endingSentence = "Well that didn't worked ... Everybody dies, you too, just just wait for it...";
+
             return "Nah that's not it ...";
         }
 
