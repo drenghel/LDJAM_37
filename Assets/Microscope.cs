@@ -14,7 +14,8 @@ public class Microscope : MonoBehaviour
 
     private void OnMouseUpAsButton()
     {
-        string res;
+        string res =
+            " Well I don't even know how you can see this message... Contact a dev and tell him he sucks please :D";
 
         switch (_playerBecher.ContainingChemicalType)
         {
@@ -41,36 +42,36 @@ public class Microscope : MonoBehaviour
                     "That's just some Green [INSERT COMPLICATED CHEMISTRY THING], that's not even remotely effective! (Smeels nice tho) ";
                 break;
 
-                defaut:
-                throw new UnityException("Could handle result calculations !");
-                break;
+            //defaut:
+            //throw new UnityException("Could handle result calculations !");
+            //break;
         }
 
-        MySceneManager.GetDialogueBox().SetDialogue("res");
+        MySceneManager.GetDialogueBox().SetDialogue(res);
         MySceneManager.GetDialogueBox().DialogueActivate();
     }
 
     private string GiveResult(Color playerBecherCurrentLiquidColor /*, out float percentScore*/)
     {
-        Color diffColor = playerBecherCurrentLiquidColor - _solutionColor;
+        Vector4 diffColor = playerBecherCurrentLiquidColor - _solutionColor;
 
 
-        var score = (int) Mathf.Abs(diffColor.r) + (int) Mathf.Abs(diffColor.g) +
-                    (int) Mathf.Abs(diffColor.b);
+        float score = Math.Abs(diffColor.x) + Math.Abs(diffColor.y) +
+                      Math.Abs(diffColor.z);
 
-        float diffAlpha = Mathf.Abs(diffColor.a);
+        float diffAlpha = Mathf.Abs(diffColor.w);
 
-        if (score == 0)
+        if (score < 0.001f && diffAlpha < 0.001f)
         {
             return "THAT'S IT, THAT LOOKS PERFECT !";
         }
-        if (score > 0 && Math.Abs(diffAlpha) < 0.001f)
+        if (score < 0.001)
         {
             return
                 "God, it's really effective, but I wonder if it could be safer for humans ? Looks like it only needs one last operation...";
         }
 
-        if (score > 10)
+        if (score > 0.01f)
         {
             return "Nah that's not it ...";
         }
@@ -97,17 +98,39 @@ public class Microscope : MonoBehaviour
         _overSpriteRenderer.enabled = false;
 
         _playerBecher = MySceneManager.GetPlayerController().BecherHeld;
-        //GivePlayerABecher();
 
         SetSolutionColor();
     }
 
-    private void GivePlayerABecher()
-    {
-        throw new System.NotImplementedException();
-    }
 
     private void SetSolutionColor()
     {
+        //todo to replace with base color
+        _solutionColor = BecherList.CombineColors(Color.blue, Color.red, Color.white);
     }
+
+#if UNITY_EDITOR || UNITY_EDITOR_64 || UNITY_EDITOR_WIN
+    private void OnGUI()
+    {
+        int xSize = 50;
+        if (GUI.Button(new Rect(0, 0, xSize, 20), "Solution"))
+        {
+            _playerBecher.EditBecher(ChemicalType.Mixed);
+            _playerBecher.CurrentLiquidColor = _solutionColor;
+        }
+        if (GUI.Button(new Rect(xSize, 0, xSize, 20), "blue"))
+        {
+            _playerBecher.EditBecher(ChemicalType.Blue);
+        }
+        if (GUI.Button(new Rect(xSize*2, 0, xSize, 20), "red"))
+        {
+            _playerBecher.EditBecher(ChemicalType.Red);
+        }
+        if (GUI.Button(new Rect(xSize*3, 0, xSize, 20), "custom"))
+        {
+            _playerBecher.EditBecher(ChemicalType.Mixed);
+            _playerBecher.CurrentLiquidColor = BecherList.CombineColors(Color.blue, Color.white);
+        }
+    }
+#endif
 }
