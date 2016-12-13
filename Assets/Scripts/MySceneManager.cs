@@ -59,5 +59,12 @@ public class MySceneManager : MonoBehaviour
         return sMs[0];
     }
 
+    public static DialogueBox GetDialogueBox()
+    {
+        var sMs = FindObjectsOfType<DialogueBox>();
+        if (sMs.Length != 1)
+            throw new UnityException("There can only be one DialogueBox");
+        return sMs[0];
+    }
 
 }
