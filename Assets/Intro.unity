@@ -706,10 +706,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: During your nape, a group of zombies attacked your team. The generator is
+  m_Text: "During your nap, a group of zombies attacked your team. The generator is
     almost empty it'll turn off in 6H max. During this time you need to find the cure
-    at the zombification. You team succed to complete it at 50%, It's now your turn
-    to complete the rest before the 6h.
+    at the zombification. You team succed to complete it at 50% You need to find the
+    2 elements to complete the cure. \nGood Luck"
 --- !u!222 &2129137331
 CanvasRenderer:
   m_ObjectHideFlags: 0
