@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Hide : MonoBehaviour 
 {
@@ -17,7 +15,6 @@ public class Hide : MonoBehaviour
 	void OnTriggerStay(Collider other)
 	{
 
-		Debug.Log ("PATATE");
 
 		if (other.gameObject.tag == "Table" && Input.GetKeyDown(KeyCode.LeftControl)) 
 		{
