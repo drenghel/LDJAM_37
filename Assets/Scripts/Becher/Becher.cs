@@ -2,9 +2,9 @@
 
 public class Becher : MonoBehaviour
 {
-    [ReadOnlyCustom] [SerializeField] protected ChemicalType _containingChemicalType = ChemicalType.Empty;
+    /*[ReadOnlyCustom] */[SerializeField] protected ChemicalType _containingChemicalType = ChemicalType.Empty;
 
-    [ReadOnlyCustom] [SerializeField] protected Color _currentLiquidColor;
+   /* [ReadOnlyCustom]*/ [SerializeField] protected Color _currentLiquidColor;
 
     [SerializeField] protected SpriteRenderer _spriteRendererBecher;
 
