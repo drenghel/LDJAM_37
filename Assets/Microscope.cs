@@ -1,12 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Microscope : MonoBehaviour {
     [SerializeField]private SpriteRenderer _overSpriteRenderer;
 
 
     //TODO should be a child class
+
+    private void OnMouseUpAsButton()
+    {
+        PlayerBecher playerBecher = MySceneManager.GetPlayerController().BecherHeld;
+
+    }
+
+
+
 
     private void OnMouseOver()
     {
