@@ -10,6 +10,9 @@ public class Microscope : MonoBehaviour {
     {
         PlayerBecher playerBecher = MySceneManager.GetPlayerController().BecherHeld;
 
+
+        MySceneManager.GetDialogueBox().SetDialogue("You are using the miscroscope congrats !");
+        MySceneManager.GetDialogueBox().DialogueActivate();
     }
 
 
