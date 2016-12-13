@@ -44,7 +44,7 @@ public class Spwaner : MonoBehaviour
 
 	void Spawn()
 	{
-		spawner = Random.Range (1, 10);
+		spawner = Random.Range (1, 5);
 
 		switch (spawner)
 		{
